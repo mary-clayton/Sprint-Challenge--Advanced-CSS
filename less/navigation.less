@@ -1,1 +1,31 @@
+@import "variables";
+@import "mixins";
+@mobile: ~"(max-width: 500px)";
+
 // Navigation code here
+header {
+    background-color: @nav-bg;
+    h1{
+        display: flex;
+        justify-content: center;
+        .navfont(4rem, @header-font-color);
+        padding: 1% 0% 0%;
+    }
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    a {
+        text-decoration: none;
+        .navfont(1.6rem, @nav-font);
+        padding: 0% 1%;
+    }
+}
+@media @mobile {
+    nav {
+        a {
+            padding: 2%;
+        }
+    }
+}
+}
