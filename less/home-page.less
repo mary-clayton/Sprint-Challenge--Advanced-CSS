@@ -1,7 +1,10 @@
+@mobile: ~"(max-width: 500px)";
+@import "variables";
+@import "mixins";
 // Home Content
 
 .home {
-
+  
   .intro {
 
     h2 {
@@ -47,6 +50,7 @@
     justify-content: center;
 
     .walk-text {
+      padding: 2%;
       width: 50%;
 
       h3 {
@@ -58,18 +62,51 @@
       }
 
       .btn {
+        .btn1{
+        padding: 2% 5%;
+        border-radius: 6px;
+        .button(1.4rem, #fff, #000);
       }
     }
+  } 
+}
 
+  @media @mobile{
+  .space-images {
+    .sky{
+      display: none;
+    }
+    .launch {
+      display: none;
+    }
+    .blast {
+      width: 100%;
+    }
+  }
+  .walk {
+    display: flex;
+    flex-flow: column;
+    padding: 5%;
+
+    .btn {
+      .btn1 {
+        width: 100%;
+      }
+    }
+    .walk-text {
+      padding-top: 5%;
+      width: 100%;
+      order: 1;
+    }
     .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
       img {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
+        order: 0;
       }
     }
   }
-}// home
+    }
+  }
+
+
+//home

@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive layouts use layout widths for each media query and responsive layouts use responsive units throughout the website.
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first means using min width in media queries and desktop first means using max width in media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+When using 62.5% in a html tag, it is the standard size of text on a website. For example, you would use 1.6 rem or 16px in this case.
 
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing is an advanced method of CSS by converting LESS to CSS through a CSS complier.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+My favorite concept in Preprocessing is that there’s no need to convert LESS to CSS by myself. Also, LESS is easier to manage vs using CSS. What does give me trouble though is it is a pain having to turn off the complier before git add, commit, and push method.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
